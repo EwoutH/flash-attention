@@ -21,7 +21,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run:
-        pip install --upgrade pip build
+        pip install --upgrade pip build packaging
     - name: Build FlashAttention
       run:
         python -m build
